@@ -14,8 +14,13 @@
     <?php  
          $str="Hello LaPlateforme!";
 
-            echo "$str";
-            echo "$str";
+            echo "$str"; // 1er commentaire //
+    ?>
+
+    <br><br><br>
+
+    <?php
+        echo "$str"; /* 2eme commentaire */
     ?>
 
 
