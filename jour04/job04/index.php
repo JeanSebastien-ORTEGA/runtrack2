@@ -13,7 +13,7 @@
 
 <form action="" method="post">
 
-        <label for="name"> Username </label>
+        <label for="name"> Nom </label>
         <input type="name" name="nom">
         <label for="password"> Password </label>
         <input type="password" name="password">
@@ -21,26 +21,51 @@
         <input type="submit" name="submit" value="Envoyer">
 
         <br><br>
-
 <?php
 
-if($_POST["nom"] == "John" && $_POST["password"] == "Rambo") 
+echo "<br>Nom : " . $_POST["nom"] . "<br> Password : " .$_POST["password"]."<br><br>";
 
-{
-     echo " C'est pas ma guerre ";
-}
+echo "Le nombre d’argument POST envoyé est : " . count($_POST);
 
 
-else 
-
-{ 
-    echo "Votre pire cauchemar" ;
-}
-    
-   
 ?>
-
 <br><br>
+<table>
+        <thead>
+            <tr>
+                <th colspan="1">Argument</th>
+                <td colspan="1">Valeur</td>
+
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                <td>
+                Nom
+                </td>
+                
+                <td>
+                <?php
+                echo $_POST["nom"]
+                ?>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                Password
+                </td>
+
+                <td>
+                <?php
+                echo $_POST["password"]
+                ?>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
 
 </form>
 
