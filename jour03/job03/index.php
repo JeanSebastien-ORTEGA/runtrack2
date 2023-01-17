@@ -18,7 +18,7 @@ $str = "I'm sorry Dave I'm afraid I can't do that";
 
     echo $str . "<br/><br/>";
 
-$array = ["a", "e", "i", "o", "u", "y"];
+if($str == "a", "e", "i", "o", "u", "y");
 
 foreach($array as $key => $value){
     
